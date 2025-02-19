@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerScript Enhancer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            font-family: monospace;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>PowerScript Enhancer</h1>
+    <form method="POST">
+        <label for="script">Enter your PowerShell script:</label><br>
+        <textarea id="script" name="script" rows="10" cols="50">{{ original_script or '' }}</textarea><br><br>
+        <button type="submit">Enhance Script</button>
+    </form>
+
+    {% if enhanced_script %}
+    <div class="output">
+        <h2>Enhanced Script:</h2>
+        <pre>{{ enhanced_script }}</pre>
+    </div>
+    {% endif %}
+</body>
+</html>
