@@ -26,7 +26,7 @@ PowerScript Enhancer is a Flask-based web application that takes PowerShell scri
    ```
    **NOTE: If you are not comfortable with the versions used in this project, install the latest**:
    ```bash
-   pip install flask requests python-dotenv`
+   pip install flask requests python-dotenv
    ```
 
 5. **Set Up Environment Variables**:
