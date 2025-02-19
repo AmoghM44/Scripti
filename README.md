@@ -10,11 +10,11 @@ PowerScript Enhancer is a Flask-based web application that takes PowerShell scri
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/powerscript-enhancer.git
-   cd powerscript-enhancer
+   git clone https://github.com/AmoghM44/Scripti.git
+   cd Scripti
    ```
 
-2. **Create a Virtual Environment**:
+2. **Create a Virtual Environment(Optional)**:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
@@ -24,8 +24,12 @@ PowerScript Enhancer is a Flask-based web application that takes PowerShell scri
    ```bash
    pip install -r requirements.txt
    ```
+   **NOTE: If you are not comfortable with the versions used in this project, install the latest**:
+   ```bash
+   pip install flask requests python-dotenv`
+   ```
 
-4. **Set Up Environment Variables**:
+5. **Set Up Environment Variables**:
    - Create a `.env` file in the root directory:
      ```bash
      touch .env
@@ -35,15 +39,27 @@ PowerScript Enhancer is a Flask-based web application that takes PowerShell scri
      GEMINI_API_KEY=your_gemini_api_key_here
      ```
 
-5. **Run the Application**:
+6. **Run the Application**:
    ```bash
    python app.py
    ```
 
-6. **Access the Application**:
+7. **Access the Application**:
    - Open your browser and go to `http://127.0.0.1:5000`.
 
 ---
+## **Project Structure**
+
+```
+powerscript-enhancer/
+├── app.py                  # Main Flask application
+├── requirements.txt        # Python dependencies
+├── .env                    # Environment variables (not tracked by Git)
+├── .gitignore              # Files to ignore in Git
+├── templates/              # HTML templates
+│   └── index.html          # Homepage template
+└── README.md               # Project documentation
+```
 
 ## **How to Use**
 
@@ -110,22 +126,6 @@ Get-Process | Sort-Object CPU -Descending | Select-Object -First 5
 
 Get-Process | Sort-Object CPU -Descending | Select-Object -First 5
 ```
-
----
-
-## **Project Structure**
-
-```
-powerscript-enhancer/
-├── app.py                  # Main Flask application
-├── requirements.txt        # Python dependencies
-├── .env                    # Environment variables (not tracked by Git)
-├── .gitignore              # Files to ignore in Git
-├── templates/              # HTML templates
-│   └── index.html          # Homepage template
-└── README.md               # Project documentation
-```
-
 ---
 
 ## **Contributing**
